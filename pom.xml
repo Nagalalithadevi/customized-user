@@ -96,6 +96,25 @@
 					<port>9191</port>
 				</configuration>
 			</plugin>
+                        <plugin> 
+    <artifactId>maven-antrun-plugin</artifactId>  
+    <executions> 
+      <execution> 
+        <id>copy-webapp-resources</id>  
+        <phase>generate-resources</phase>  
+        <configuration> 
+          <tasks> 
+            <copy todir="target/webapp" filtering="false"> 
+              <fileset dir="target/exploded-artifact-id-war/path-to-files"/>  
+            </copy> 
+          </tasks> 
+        </configuration>  
+        <goals> 
+          <goal>run</goal> 
+        </goals> 
+      </execution>  
+    </executions>  
+  </plugin>
 		</plugins>
 	</build>
 	
