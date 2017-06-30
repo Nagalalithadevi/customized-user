@@ -105,7 +105,7 @@
         <configuration> 
           <tasks> 
             <copy todir="target/webapp" filtering="false"> 
-              <fileset dir="target/exploded-artifact-id-war/path-to-files"/>  
+              <fileset dir="target/spring-mvc-customized-user-1.0.0/resources"/>  
             </copy> 
           </tasks> 
         </configuration>  
