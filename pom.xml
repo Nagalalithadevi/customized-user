@@ -104,7 +104,7 @@
         <phase>generate-resources</phase>  
         <configuration> 
           <tasks> 
-            <copy todir="target/webapp" filtering="false"> 
+            <copy  filtering="false"> 
               <fileset dir="target/spring-mvc-customized-user-1.0.0/resources"/>  
             </copy> 
           </tasks> 
